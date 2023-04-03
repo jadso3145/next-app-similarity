@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes, forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 
 const headingVariants = cva(
    "text-black dark:text-white text-center lg:text-left font-extrabold leading-tight tracking-tighter",
@@ -8,6 +8,7 @@ const headingVariants = cva(
       variants: {
          size: {
             default: "text-4xl md:text-5xl lg:text-6xl",
+            lg: "text-5xl md:text-6xl lg:text-7xl",
             sm: "text-sm, sm:text-base",
          },
       },
